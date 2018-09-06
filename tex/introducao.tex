@@ -1,7 +1,62 @@
 % Comando simples para exibir comandos Latex no texto
 \newcommand{\comando}[1]{\textbf{$\backslash$#1}}
 
-\subsection{Calculo}
+\section{Considerações Gerais}
+
+Testando a inserção de uma nova sigla \sigla{EESC}{Escola de Engenharia de São Carlos}, vamos ver se deu certo.
+
+\sigla{ESR}{Estrutura de Solo Reforçado}
+
+\sigla{RCD}{Resíduo de Construção e Demolição}
+
+\sigla{RCD-R}{Resíduo de Construção e Demolição Reciclado}
+
+
+\begin{table}[htb]
+\IBGEtab{%
+  \caption{População dos países da América do Sul} \label{tabela:populacao_america_sul_nova}
+}{%
+\begin{tabular}{r|p{3cm}|r}        
+\toprule
+Código  & País            & População   \\ \midrule \midrule
+1       & Brasil          & ~~~~~~191.480.630 \\ \midrule 
+2       & Argentina       &  39.934.100 \\ \midrule 
+3       & Colômbia        &  46.741.100 \\ \midrule 
+4       & Paraguai        &   9.694.200 \\ \midrule 
+5       & Uruguai         &   3.350.500 \\ \midrule 
+6      & Chile           &  16.803.000 \\ \bottomrule
+\end{tabular}
+}{%
+  \fdireta{wikipedia:2011:america_sul}%
+  \nota{Esta é uma nota, que diz que os dados são baseados na
+  regressão linear.}%
+  \nota[Anotações]{Uma anotação adicional, que pode ser seguida de várias
+  outras, porém são opcionais.}%
+  }
+\end{table}
+
+\begin{table}[htb]
+\caption{Editores de Texto Livres}
+\label{quadro:editores_texto_livres_novo}
+\centering
+\begin{tabular}{|l|l|r|}        \hline
+Editor     & Multiplataforma & Específico para Latex \\ \hline
+Kwriter    & Sim             & Não                   \\
+Texmaker   & Sim             & Sim                   \\
+Kile       & Sim             & Sim                   \\
+Geany      & Sim             & Não                   \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[htb]
+ \caption{Logomarca da USP}
+ \label{fig:logomarca_usp_novo}
+ \centering
+ \includegraphics[scale=0.3]{usp-logo.pdf}
+ \fdireta{usp:logo}
+\end{figure}
+
+
 
 Este documento explica brevemente como trabalhar com a classe \LaTeX~\textit{icmc} para confeccionar trabalhos acadêmicos seguindo as normas da \sigla{ABNT}{Associação Brasileira de Normas Técnicas} e as \aspas{\textit{Diretrizes para apresentação de dissertações e teses da USP: documento eletrônico e impresso. Parte I (ABNT)}}, publicado pelo \sigla{SIBi}{Sistema Integrado de Bibliotecas} USP. O presente manual também atende as exigências prevista no regimento do Programa de Pós-graduação em \sigla{CCMC}{Ciências da Computação e Matemática Computacional} do \sigla{ICMC}{Instituto de Ciências Matemáticas e de Computação} da \sigla{USP}{Universidade de São Paulo}.
 

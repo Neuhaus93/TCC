@@ -196,7 +196,7 @@ Programas de Pós-graduação do Instituto de Ciências Matemáticas e de Comput
         \renewcommand{\imprimirpreambulo}{\nohyphens{\imprimirtipotrabalho~submitted to the \imprimirinstituicao,\exam~in partial fulfillment of the requirements for the degree of the \degree~\imprimirespecialidade. \tipoexemplar}}
     }
     { % Preambulo em português
-        \renewcommand{\imprimirpreambulo}{\nohyphens{\imprimirtipotrabalho~apresentada à \imprimirinstituicao,\exam~como parte dos requisitos para obten{\c c}{\~a}o dos requisitos para a
+        \renewcommand{\imprimirpreambulo}{\nohyphens{Trabalho de Concus{\~a}o de Curso apresentado ao Departamento de Geotecnia da \imprimirinstituicao,\exam~como parte dos requisitos para a
             conclus{\~a}o da gradua{\c c}{\~a}o em Engenharia Civil
         }}
     }
