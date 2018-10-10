@@ -33,7 +33,7 @@
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
-\titulo{Título do TCC}
+\titulo{Avaliação e dimensionamento de muros executados com resíduos de construção e demolição reciclados e reforçados com geogrelha}
 \autor[Neuhaus, L. A.]{Lucas Arendt Neuhaus}
 \orientador[Orientador]{Prof. Dr.}{Jefferson Lins da Silva}
 %\coorientador{Prof. Dr.}{Fulano de Tal}
@@ -49,15 +49,11 @@
 % Resumo em português
 % conter no máximo 500 palavras
 \textoresumo{
-    Este trabalho é um breve modelo  para a escrita de monografias de qualificação, dissertações e teses utilizando o ambiente \LaTeX, de acordo com as normas exigidas pelo Instituto de Ciências Matemáticas e de Computação (ICMC), da Universidade de São Paulo (USP). Para a confecção deste modelo foi utilizado a última versão (1.9.2) do pacote de classes \textit{abnTeX2} que segue as normas da Associação Brasileira de Normas Técnicas. A elaboração de uma monografia, dissertação ou tese pode ser feita sobrescrevendo o conteúdo deste modelo. 
-    }{Modelo, Monografia de qualificação, Dissertação, Tese, Latex}
+    O intenso crescimento das cidades traz consigo a preocupação com a exploração abusiva dos recursos naturais não renováveis, e por conta disso a adoção de alternativas sustentáveis tornam-se cada vez mais atrativas e necessárias. A utilização de Resíduos de Construção e Demolição Reciclados (RCD-R) e de solos não convencionais como material de preenchimento para Estruturas de Solo Reforçado (ESR) têm se mostrado uma opção altamente viável. Diante disso, neste trabalho procurou-se analisar e exemplificar a utilização de RCD-R na construção de um muro reforçado com geogrelha.
+    
+    
+    } {Muro, Resíduo de Construção Civil, Geossintético, Geogrelha}
 
-% ---
-% resumo em inglês
-% ---
-\textoresumo[english]{
-    This paper is a brief model for writing qualification monographs, dissertations and thesis using \LaTeX environment, in accordance with the standards required by the Institute of Mathematics and Computer Sciences (ICMC), University of São Paulo (USP). For making this model, the latest version (1.9.2) \textit{abnTeX2} classes package was used. This package follow the rules of the Brazilian Association of Technical Standards. A drafting a monograph, dissertation or thesis can be done by overwriting the contents of this model.
-    }{Template, Qualification monograph, Dissertation, Thesis, Latex}
     
     
 % ---
@@ -76,10 +72,10 @@
 	    pdfcreator={LaTeX with abnTeX2/ICMC-USP},
 		pdfkeywords={\palavraschave}, 
 		colorlinks=true,       		% false: boxed links; true: colored links
-    	linkcolor=blue,          	% color of internal links
-    	citecolor=blue,        		% color of links to bibliography
+    	linkcolor=black,          	% color of internal links
+    	citecolor=black,        		% color of links to bibliography
     	filecolor=magenta,      	% color of file links
-		urlcolor=blue,
+		urlcolor=black,
 		bookmarksdepth=4
 }
 \makeatother
@@ -91,19 +87,19 @@
 
 % Inserir a ficha catalográfica
 % \incluifichacatalografica*{tex/fichaCatalografica.pdf}
- \incluifichacatalografica{634} % Código Cutter: número atribuído ao sobrenome do autor. Para obtê-lo, consulte a tabela Cutter Sanborn (em http://www.davignon.qc.ca/cutter1.html), procure pelo sobrenome ou forma mais próxima ao sobrenome completo e coloque o número indicado como parâmetro.
+ \incluifichacatalografica*{tex/pre-textual/PaginaEmBranco.pdf} % Código Cutter: número atribuído ao sobrenome do autor. Para obtê-lo, consulte a tabela Cutter Sanborn (em http://www.davignon.qc.ca/cutter1.html), procure pelo sobrenome ou forma mais próxima ao sobrenome completo e coloque o número indicado como parâmetro.
 
 
 % DEDICATÓRIA / AGRADECIMENTO / EPÍGRAFE
-\textodedicatoria*{tex/pre-textual/dedicatoria}
-\textoagradecimentos*{tex/pre-textual/agradecimentos}
-\textoepigrafe*{tex/pre-textual/epigrafe}
+% \textodedicatoria*{tex/pre-textual/dedicatoria}
+% \textoagradecimentos*{tex/pre-textual/agradecimentos}
+% \textoepigrafe*{tex/pre-textual/epigrafe}
 
 % Inclui a lista de figuras
-\incluilistadefiguras
+ \incluilistadefiguras
 
 % Inclui a lista de tabelas
-\incluilistadetabelas
+ \incluilistadetabelas
 
 % Inclui a lista de quadros
 % \incluilistadequadros
@@ -115,7 +111,7 @@
 % \incluilistadecodigos
 
 % Inclui a lista de siglas e abreviaturas
-\incluilistadesiglas
+% \incluilistadesiglas
 
 % Inclui a lista de símbolos
 % \incluilistadesimbolos
@@ -129,13 +125,33 @@
 % ----------------------------------------------------------
 \textual
 
+\chapter{Resumo do TCC 1}
+\label{resumotcc1}
+\input{tex/resumo-tcc1.tex}
+
 \chapter{Introdução}
 \label{chapter:introducao}
 \input{tex/introducao}
 
-\chapter{Instalando o abnTeX2}
-\label{chapter:instalando-abntex}
-\input{tex/instalando-abntex}
+\chapter{Objetivos}
+\label{chapter:objetivos}
+\input{tex/objetivos}
+
+\chapter{Revisão Bibliográfica}
+\label{chapter:revisao-bibliografica}
+\input{tex/revisao-bibliografica.tex}
+
+\chapter{Pré-dimensionamento}
+\label{chapter:pre-dimensionamento}
+\input{tex/pre-dimensionamento.tex}
+
+\chapter{Cronograma}
+\label{chapter:cronograma}
+\input{tex/cronograma.tex}
+
+%\chapter{Exemplos}
+%\label{chapter:exemplos}
+%\input{tex/ex-utilizacoes.tex}
 
 
 % ---
@@ -161,6 +177,9 @@
 % ---
 % Inicia os apêndices
 % ---
+\begin{comment}
+
+
 \begin{apendicesenv}
 
     \chapter{Documento básico usando a classe \textit{icmc}}
@@ -187,4 +206,6 @@
 \end{anexosenv}
 % ---
 
+
+\end{comment}
 \end{document}

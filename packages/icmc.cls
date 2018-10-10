@@ -170,7 +170,7 @@ Programas de Pós-graduação do Instituto de Ciências Matemáticas e de Comput
         {   
             \tipotrabalho{Disserta{\c c}{\~a}o}
             \newcommand{\degree}{Mestre}
-            \newcommand{\tipodocurso}{Mestrado}
+            \newcommand{\tipodocurso}{Gradua{\c c}{\~a}o}
         }
 }
 
@@ -524,7 +524,7 @@ Programas de Pós-graduação do Instituto de Ciências Matemáticas e de Comput
 % CCMC ==========================================================================
     \ifthenelse{\equal{#1}{CCMC}}{
         \programa{Programa de Pós-Graduação em Ciências de Computação e Matemática Computacional}
-        \especialidade{em Ciências -- Ciências de Computação e Matemática Computacional}
+        \especialidade{Engenharia Civil}
         \addto\captionsenglish{% ingles
             %\programa{Programa de Pós-Graduação em Ciências de Computação e Matemática Computacional}
             \especialidade{Program in Computer Science and Computational Mathematics}
@@ -1016,7 +1016,7 @@ e de Computação, Universidade de São Paulo, \@year.}\\
         \begin{resumo}[\csuse{res-title-\csuse{res-language-\thecount}}]
             \begin{otherlanguage*}{\csuse{res-language-\thecount}}
                 \begin{SingleSpace}
-                    {\MakeUppercase{\ABNTautorreferencia}}. {\textbf{\imprimirtitulo}.} \@year. \pageref{LastPage} f. \imprimirtipotrabalho~(\tipodocurso~em \imprimirespecialidade) -- Instituto de Ciências Matemáticas e de Computação (ICMC/USP), \imprimirlocal.
+                    {\MakeUppercase{\ABNTautorreferencia}}. {\textbf{\imprimirtitulo}.} \@year. \pageref{LastPage} f. \imprimirtipotrabalho~(\tipodocurso~em \imprimirespecialidade) -- Escola de Engenharia de São Carlos (EESC/USP), \imprimirlocal.
                 \end{SingleSpace}
                 %\end{flushleft}
                 \vskip 20pt

@@ -1,0 +1,118 @@
+\section{Propriedades Relevantes}
+
+Podemos resumir como relevantes, para o desempenho da função de reforço, as seguintes propriedades:
+\begin{itemize}
+    \item resistência à tração, $T$ (kN/m);
+    \item elongação sob tração, $\epsilon$ (\%);
+    \item taxa de deformação, $\epsilon'$ (\%/s);
+    \item módulo de rigidez à tração, $J$ (kN/m);
+    \item comportamento em fluência;
+    \item resistência a esforços de instalação;
+    \item resistência à degradação ambiental;
+    \item interação mecânica com o solo envolvente;
+    \item fatores de redução.
+\end{itemize}
+
+\section{Propriedades Relevantes do Solo}
+
+Td - Resistência à tração ao final da vida útil da obra
+$Tn$ - Resistência à tração agora
+
+Fatores de redução:
+\begin{itemize}
+    \item $F_{R_{DI}}$ - Fator de redução por danos de instalação -> Durante a obra
+    \item $F_{R_{FL}}$ - Fator de redução por fluência -> Durante a vida útil
+    \item $F_{R_{DQB}}$ - Fator de redução por danos químicos ou biológicos -> Condições especiais
+    \item $F_{R_I}$ Fator de redução pro incertezas
+\end{itemize}
+
+\begin{equation}
+    T_d = \frac{T_N}{F_{R_{TOT}}}
+\end{equation}
+
+\section{Dimensionamento de uma Estrutura de Solo Reforçado}
+
+De maneira geral, muito semelhante ao de uma estrutura não reforçada.
+
+Basicamente três grandes grupos a serem analisados:
+\begin{enumerate}
+    \item Estabilidade Externa -> Deslizamento e  tombamento do muro e sua capacidade de suporte.
+    \item Estabilidade Geral (ou Global)
+    \item Estabilidade Interna -> Ruptura do reforço, arrancamento do reforço, e conexão do reforço com a face
+\end{enumerate}
+
+\subsection{Estabilidade Externa}
+
+\subsubsection{Deslizamento}
+$F_s = \frac{R}{S} \geq 1$
+\begin{equation*}
+    F_s= \frac{\gamma . H . L_R . \tan(\sigma)}{E_A}
+\end{equation*}
+\begin{equation*}
+    L_R = \frac{1,5 E_A}{\gamma H L_R T_g \sigma}
+\end{equation*}
+
+\subsubsection{Tombamento}
+ Somatória de momentos
+ 
+ \begin{equation*}
+     F_S = \frac{W . \tfrac{1}{2} . L_R}{E_A . y_E}
+ \end{equation*}
+ \begin{equation*}
+     F_S = \frac{W . L_R}{2 . E_A . y_E} \geq 2,0
+ \end{equation*}
+ 
+ 
+ \subsubsection{Capacidade de Carga da Fundação}
+ 
+ \begin{equation*}
+     F_S = \frac{c . N_C + \tfrac{1}{2} . \gamma . L_R . N_\gamma}{\sigma_{Vmax}}
+ \end{equation*}
+ 
+ \begin{equation*}
+     \sigma_{Vmax} = \frac{W}{L_R} + M . E_A
+ \end{equation*}
+ 
+ 
+ \subsection{Estabilidade Interna}
+ 
+ Como a ruptura é mais crítica na base faz sentido colocar reforços com maior resistência. 
+ E como o arrancamento é mais comum no topo do muro, faz sentido reforços mais compridos no topo do muro.
+ 
+ Contudo o usual é trabalhar com reforços de mesmo comprimento.
+ 
+ \subsubsection{Ruptura do Reforço}
+ Mais crítico na base do muro
+ 
+ \begin{equation*}
+     F_S = \frac{T_d}{K_A . \gamma . z . s_v} = 1,0
+ \end{equation*}
+ Ou seja:
+ \begin{equation*}
+     s_v = \frac{T_d}{K_A . \gamma . z}
+ \end{equation*}
+ 
+ 
+ \subsubsection{Arrancamento do Reforço}
+ 
+ Mais crítico no topo do muro
+ 
+ $L_L = (H - z) . T_g . (45º - \tfrac{\phi}{2})$ - Comprimento livre
+ 
+ $L_A = L_R - L_L$ - Comprimento Ancorado
+ 
+ \begin{equation*}
+     F_S = \frac{2 . c_A . \gamma . z . T_g . \sigma}{K_A . \gamma . z . s_v} \geq 1,5
+ \end{equation*}
+ 
+ 
+ 
+ \subsection{Estabilidade Global}
+ 
+ Análise tradicional da mecânica dos solos. Há uma cunha de ruptura global. É basicamente comparar a resistência ao longo da cunha.
+ 
+ $F_S$ recomendado: \textbf{1,3} para obras provisórias e \textbf{1,5} para obras permanentes.
+ 
+ A norma estabelece alguns valores mínimos de comprimento de reforço em função da altura. Em boa parte das normas internacionais temos $L_R = 0,70H$.
+ 
+ As normas estabelecem também um mínimo comprimento de embutimento em função da geometria do muro. Mas o que irá realmente dizer o comprimento do embutimento será a análise de estabilidade.
